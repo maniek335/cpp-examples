@@ -3,22 +3,12 @@
 int Person::ostatni_id;
 int Person::ile_obiektow;
 
-Person::Person() {
-  imie = "nieznane";
-  nazwisko = "nieznane";
-  miasto = "nie podano";
-  plec = 'K';
-  data_ur = "nie podano";
-  id = ++ostatni_id;
-  ile_obiektow++;
-}
-
-Person::Person(string arg_imie, string arg_nazwisko, string arg_data_ur) {
-  imie = arg_imie;
-  nazwisko = arg_nazwisko;
-  miasto = "Wagrowiec";
-  plec = 'M';
-  data_ur = arg_data_ur;
+Person::Person(string f, string l, string d, char g, string c) {
+  imie = f;
+  nazwisko = l;
+  data_ur = d;
+  plec = g;
+  miasto = c;
   id = ++ostatni_id;
   ile_obiektow++;
 }

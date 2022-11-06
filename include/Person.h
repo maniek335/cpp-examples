@@ -11,7 +11,6 @@ class Person {
   static int ostatni_id;
   static int ile_obiektow;
   void przedstaw();
-  Person();
-  Person(string imie, string nazwisko, string data_ur);
+  Person(string imie="nieznane", string nazwisko="nieznane", string data_ur="nie podano", char plec='K', string miasto="nie podano");
   ~Person();
 };
