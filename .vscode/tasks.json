@@ -2,17 +2,20 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "C/C++: g++ build active file",
+      "label": "C/C++: g++ build project",
       "command": "/usr/bin/g++",
       "args": [
         "-fdiagnostics-color=always",
+        "-I",
+        "${workspaceFolder}/include",
         "-g",
-        "${file}",
+        "${workspaceFolder}/app.cpp",
+        "${workspaceFolder}/src/*.cpp",
         "-o",
-        "${workspaceFolder}/dist/${fileBasenameNoExtension}"
+        "${workspaceFolder}/dist/app"
       ],
       "options": {
-        "cwd": "${fileDirname}"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": ["$gcc"],
       "group": {
