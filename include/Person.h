@@ -7,7 +7,7 @@ class Person {
   int id;
   string firstname;
   string lastname;
-  string birthday;
+  string birthdate;
   char gender;
   string city;
 
@@ -17,7 +17,7 @@ class Person {
   void introduce();
   Person(string firstname = "nieznane",
          string lastname = "nieznane",
-         string birthday = "nie podano",
+         string birthdate = "nie podano",
          char gender = 'K',
          string city = "nie podano");
   ~Person();

@@ -6,7 +6,7 @@ int Person::object_count;
 Person::Person(string f, string l, string d, char g, string c) {
   firstname = f;
   lastname = l;
-  birthday = d;
+  birthdate = d;
   gender = g;
   city = c;
   id = ++last_id;
@@ -25,6 +25,6 @@ void Person::info() {
 
 void Person::introduce() {
   cout << "ID: " << id << endl;
-  cout << firstname << " " << lastname << " " << birthday << " " << city << " "
+  cout << firstname << " " << lastname << " " << birthdate << " " << city << " "
        << gender << endl;
 }
