@@ -15,16 +15,23 @@ Person::Person(string f, string l, string d, char g, string c) {
 
 Person::~Person() {
   object_count--;
-  cout << "zaglada czlowieka" << endl;
+  cout << "Person destruction with ID: " << id << endl;
 }
 
 void Person::info() {
-  cout << "Ostanio nadany ID wynosi: " << last_id << endl;
-  cout << "obiektow w systemie: " << object_count << endl;
+  cout << string(50, '-') << endl;
+  cout << "Last ID: " << last_id << endl;
+  cout << "Object count: " << object_count << endl;
+  cout << string(50, '=') << endl;
 }
 
 void Person::introduce() {
+  cout << string(50, '-') << endl;
   cout << "ID: " << id << endl;
-  cout << firstname << " " << lastname << " " << birthdate << " " << city << " "
-       << gender << endl;
+  cout << "First Name: " << firstname << endl;
+  cout << "Last Name: " << lastname << endl;
+  cout << "Birth Date: " << birthdate << endl;
+  cout << "City: " << city << endl;
+  cout << "Gender: " << gender << endl;
+  cout << string(50, '=') << endl;
 }
