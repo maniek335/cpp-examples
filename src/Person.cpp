@@ -27,11 +27,23 @@ void Person::info() {
 
 void Person::introduce() {
   cout << string(50, '-') << endl;
+
   cout << "ID: " << id << endl;
-  cout << "First Name: " << firstname << endl;
-  cout << "Last Name: " << lastname << endl;
-  cout << "Birth Date: " << birthdate << endl;
-  cout << "City: " << city << endl;
-  cout << "Gender: " << gender << endl;
+
+  cout << "First Name: ";
+  cout << (firstname.empty() ? "N/A" : firstname) << endl;
+
+  cout << "Last Name: ";
+  cout << (lastname.empty() ? "N/A" : lastname) << endl;
+
+  cout << "Birth Date: ";
+  cout << (birthdate.empty() ? "N/A" : birthdate) << endl;
+
+  cout << "City: ";
+  cout << (city.empty() ? "N/A" : city) << endl;
+
+  cout << "Gender: ";
+  cout << ((gender == '\0') ? "N/A" : string(1, gender)) << endl;
+
   cout << string(50, '=') << endl;
 }

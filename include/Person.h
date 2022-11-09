@@ -15,10 +15,10 @@ class Person {
   static int last_id;
   static int object_count;
   void introduce();
-  Person(string firstname = "nieznane",
-         string lastname = "nieznane",
-         string birthdate = "nie podano",
-         char gender = 'K',
-         string city = "nie podano");
+  Person(string firstname = "",
+         string lastname = "",
+         string birthdate = "",
+         char gender = '\0',
+         string city = "");
   ~Person();
 };
