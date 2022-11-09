@@ -2,13 +2,19 @@
 
 using namespace std;
 
+enum class Gender {
+  Undefined,
+  Male,
+  Female
+};
+
 class Person {
  public:
   int id;
   string firstname;
   string lastname;
   string birthdate;
-  char gender;
+  Gender gender;
   string city;
 
   static void info();
@@ -18,7 +24,7 @@ class Person {
   Person(string firstname = "",
          string lastname = "",
          string birthdate = "",
-         char gender = '\0',
+         Gender gender = Gender::Undefined,
          string city = "");
   ~Person();
 };

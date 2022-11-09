@@ -3,7 +3,7 @@
 int Person::last_id;
 int Person::object_count;
 
-Person::Person(string f, string l, string d, char g, string c) {
+Person::Person(string f, string l, string d, Gender g, string c) {
   firstname = f;
   lastname = l;
   birthdate = d;
@@ -43,7 +43,19 @@ void Person::introduce() {
   cout << (city.empty() ? "N/A" : city) << endl;
 
   cout << "Gender: ";
-  cout << ((gender == '\0') ? "N/A" : string(1, gender)) << endl;
+  switch (gender) {
+    case Gender::Male:
+      cout << "Male" << endl;
+      break;
+
+    case Gender::Female:
+      cout << "Female" << endl;
+      break;
+
+    default:
+      cout << "N/A" << endl;
+      break;
+  }
 
   cout << string(50, '=') << endl;
 }

@@ -20,15 +20,15 @@ int main() {
   Person::info();
   czlowiek1.introduce();
 
-  Person czlowiek2("Pawel", "Nowak", "14.08.2002", 'M', "Wagrowiec");
+  Person czlowiek2("Pawel", "Nowak", "14.08.2002", Gender::Male, "Wagrowiec");
   Person::info();
   czlowiek2.introduce();
 
-  Person czlowiek3("Milosz", "Nowacki", "16.08.2002", 'M', "Wagrowiec");
+  Person czlowiek3("Milosz", "Nowacki", "16.08.2002", Gender::Male, "Wagrowiec");
   Person::info();
   czlowiek3.introduce();
 
-  Person czlowiek4("Waldemar", "Nowacki", "15.08.2002", 'M', "Wagrowiec");
+  Person czlowiek4("Waldemar", "Nowacki", "15.08.2002", Gender::Male, "Wagrowiec");
   Person::info();
   czlowiek4.introduce();
 
